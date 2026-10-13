@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>محمد شامل | مطور ويب وتطبيقات موبايل</title>
+  <meta name="description" content="الموقع الشخصي لمحمد شامل — مطور ويب وتطبيقات موبايل. المهارات، التحصيل الدراسي، والتواصل." />
+  <meta property="og:title" content="محمد شامل | مطور ويب وتطبيقات موبايل" />
+  <meta property="og:description" content="مطور شغوف بتقديم تجارب رقمية عالية الجودة للويب والموبايل." />
+  <meta property="og:image" content="assets/images/profile.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%236C63FF'/%3E%3Ctext x='32' y='41' font-size='26' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EMS%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="lang-ar">
+
+  <!-- ======= Navbar ======= -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container">
+      <a href="#home" class="logo" data-i18n="nav.logo">محمد شامل</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav.about">من أنا</a></li>
+        <li><a href="#education" data-i18n="nav.education">التحصيل الدراسي</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">مهاراتي</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">تواصل</a></li>
+      </ul>
+      <button class="lang-btn" id="langToggle" aria-label="Switch language">EN</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ======= Hero ======= -->
+    <section class="hero" id="home">
+      <canvas id="particles" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="photo-ring">
+          <img src="assets/images/profile.jpg" alt="Mohammed Shamil" width="196" height="196" />
+        </div>
+        <p class="hero-greeting" data-i18n="hero.greeting">مرحباً، أنا</p>
+        <h1 class="hero-name" data-i18n="hero.name">محمد شامل</h1>
+        <p class="hero-role"><span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+        <p class="hero-tagline" data-i18n="hero.tagline"></p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact" data-i18n="hero.cta.contact">تواصل معي</a>
+          <a class="btn btn-ghost" href="#skills" data-i18n="hero.cta.skills">استعرض مهاراتي</a>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll down">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- ======= About ======= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label" data-i18n="about.label">نبذة</span>
+          <h2 data-i18n="about.title">من أنا</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-text reveal" data-i18n="about.text"></p>
+          <div class="about-code glass reveal" dir="ltr">
+            <span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <pre><code><span class="tk-kw">const</span> <span class="tk-var">developer</span> = {
+  name: <span class="tk-str">"Mohammed Shamil"</span>,
+  role: <span class="tk-str">"Web &amp; Mobile Developer"</span>,
+  focus: [<span class="tk-str">"web"</span>, <span class="tk-str">"mobile"</span>, <span class="tk-str">"UX"</span>],
+  <span class="tk-fn">build</span>: () =&gt; <span class="tk-str">"quality + performance"</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Education ======= -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label" data-i18n="edu.label">المسير التعليمي</span>
+          <h2 data-i18n="edu.title">التحصيل الدراسي</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item glass reveal">
+            <div class="timeline-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+            </div>
+            <div class="timeline-body">
+              <h3 data-i18n="edu.b.degree">بكالوريوس علوم الحاسوب</h3>
+              <p class="timeline-inst" data-i18n="edu.b.inst">جامعة المعارف</p>
+              <span class="badge badge-done" data-i18n="edu.done">مكتمل ✓</span>
+            </div>
+          </li>
+          <li class="timeline-item glass reveal">
+            <div class="timeline-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+            </div>
+            <div class="timeline-body">
+              <h3 data-i18n="edu.d.degree">دبلوم تقنيات علوم الحاسوب</h3>
+              <p class="timeline-inst" data-i18n="edu.d.inst">المعهد التقني الأنبار</p>
+              <span class="badge badge-done" data-i18n="edu.done2">مكتمل ✓</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======= Skills ======= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label" data-i18n="skills.label">الأدوات والتقنيات</span>
+          <h2 data-i18n="skills.title">مهاراتي</h2>
+        </div>
+        <div class="skills-grid" id="skillsGrid"><!-- rendered by JS --></div>
+      </div>
+    </section>
+
+    <!-- ======= Contact ======= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label" data-i18n="contact.label">لنبنِ شيئاً معاً</span>
+          <h2 data-i18n="contact.title">تواصل معي</h2>
+        </div>
+        <div class="contact-card glass reveal">
+          <p class="contact-text" data-i18n="contact.text"></p>
+          <a class="contact-email" href="mailto:alheety330@gmail.com">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            <span>alheety330@gmail.com</span>
+          </a>
+          <div class="divider"></div>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <input type="text" id="fName" data-i18n-ph="contact.form.name" placeholder="الاسم" required autocomplete="name" />
+              <input type="email" id="fEmail" data-i18n-ph="contact.form.email" placeholder="البريد الإلكتروني" required autocomplete="email" />
+            </div>
+            <textarea id="fMessage" rows="4" data-i18n-ph="contact.form.message" placeholder="رسالتك" required></textarea>
+            <button type="submit" class="btn btn-primary btn-send" data-i18n="contact.form.send">إرسال</button>
+            <p class="form-note" data-i18n="contact.form.note"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footer.text">© 2026 محمد شامل — جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
